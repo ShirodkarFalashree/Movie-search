@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react"
 const AppContext = React.createContext();
 
-export const API_URL = `http://www.omdbapi.com/?apikey=${import.meta.env.VITE_API_KEY}`;
+export const API_URL = `https://www.omdbapi.com/?apikey=${import.meta.env.VITE_API_KEY}`;
 const AppProvider = ({ children }) => {
 
     const [isLoading, setisLoading] = useState(true);
